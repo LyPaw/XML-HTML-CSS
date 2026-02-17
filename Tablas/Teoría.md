@@ -237,39 +237,4 @@ Validación	Estricta en etiquetas y atributos	Flexible con semántica mejorada
 | width      | Atributo que define la anchura de la tabla. Su uso no se recomienda; se prefiere CSS. |
 
 
-
-Más Allá de las Celdas: 5 Aspectos Sorprendentes sobre las Tablas en HTML
-Introducción
-
-Las tablas en HTML pueden parecer una herramienta sencilla, reservada únicamente para mostrar datos tabulares. Sin embargo, bajo esa aparente simplicidad se encuentran características poderosas que muchos desarrolladores principiantes pasan por alto. En este artículo exploramos cinco aspectos importantes sobre cómo funcionan realmente las tablas en HTML.
-
-Aspectos Clave de las Tablas en HTML
-1. HTML No Tiene Concepto de Columnas
-
-En la estructura interna de HTML, no existe un concepto real de columna. La tabla se construye a partir de filas (<tr>), que contienen celdas (<td> o <th>).
-
-La apariencia de columnas es únicamente visual, generada por el navegador. Por eso, para estilizar columnas completas se requiere CSS, usando selectores como nth-child para apuntar a las celdas en la misma posición vertical.
-
-2. Flexibilidad de las Cabeceras (<th>)
-
-Las celdas de cabecera (<th>) no están limitadas a la primera fila de la tabla. Aunque su uso más común es como encabezado de columna, pueden colocarse en cualquier posición para cumplir funciones semánticas distintas.
-
-Por ejemplo, se pueden usar como encabezados de fila, describiendo el propósito de los datos en cada fila, lo que mejora la claridad y accesibilidad de la tabla.
-
-3. Usar <caption> para Proporcionar Contexto
-
-La etiqueta <caption> permite añadir un título o descripción semántica a una tabla. Aunque se escribe dentro de <table>, el navegador lo renderiza visualmente fuera de la tabla, como un encabezado contextual.
-
-Esto proporciona información esencial sobre el contenido de la tabla, similar a cómo se usan títulos de tablas en documentos académicos.
-
-4. Organización Semántica con <thead>, <tbody> y <tfoot>
-
-HTML ofrece tres etiquetas de agrupación semántica: <thead>, <tbody> y <tfoot>. Estas permiten dividir la tabla en secciones claras: cabecera, cuerpo principal y pie de tabla.
-
-Esta estructura mejora la legibilidad del código, facilita la accesibilidad y permite funcionalidades avanzadas, como mantener la cabecera visible mientras el usuario se desplaza por un cuerpo largo de datos.
-
-5. Anidamiento de Tablas
-
-Una celda de tabla (<td>) puede contener cualquier tipo de contenido, incluyendo otra tabla. Esto permite crear estructuras complejas y jerárquicas dentro de una misma tabla.
-
 Aunque esta técnica ofrece flexibilidad, debe usarse con moderación para mantener el código claro y fácil de mantener.
